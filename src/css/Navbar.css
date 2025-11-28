@@ -1,0 +1,106 @@
+.navbar {
+  background-color: #000000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  position: relative;
+  font-size: 1.85rem;
+  font-weight: bold;
+  color: #fff; 
+  transition: all 0.1s ease;
+  background: none;
+  -webkit-text-fill-color: #fff;
+}
+
+.navbar-brand:hover {
+  background: linear-gradient(90deg, #00c6ff, #0077ff, #00c6ff);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.03);
+  animation: gradientMove 3s ease infinite;
+}
+
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-size: 200% 200%;
+  transition: all 0.4s ease;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #97c9e0;
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%; 
+}
+
+.nav-link:hover {
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+  background-size: 200% 200%;
+  animation: gradientShift 1s ease infinite;
+  color: #fff;
+}
+
+
+
+.nav-link:active {
+  background: linear-gradient(90deg, #0090cc, #005fcc, #0090cc);
+  background-size: 200% 200%;
+  color: #fff;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+  }
+}
