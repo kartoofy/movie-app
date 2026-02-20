@@ -23,6 +23,7 @@ This project was mainly created to practice core React concepts such as state ma
 
 ## Home
 <img width="1923" height="1202" alt="image" src="https://github.com/user-attachments/assets/a16cad17-20fe-4b0c-b12a-686e99a86b19" />
+
 ## Favorites
 <img width="1961" height="1223" alt="image" src="https://github.com/user-attachments/assets/1dfc715b-0b78-43d1-8729-aa54752db15e" />
 
